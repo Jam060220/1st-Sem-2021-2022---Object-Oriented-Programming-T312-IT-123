@@ -1,0 +1,19 @@
+package Main;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.print("Please enter time in minutes : ");
+		int min = scan.nextInt();
+
+		int revolutionTime = min * 3000;
+		System.out.println("Based on what you have inputed, There are " + revolutionTime +" revolution per minute.");
+
+		int sec = revolutionTime / 60;
+		System.out.println("\nAnd the rotation is " + sec + " degrees in a second" );
+	}
+
+}
