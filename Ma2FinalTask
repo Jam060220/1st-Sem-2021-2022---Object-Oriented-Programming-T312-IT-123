@@ -1,0 +1,138 @@
+public class student 
+{
+
+	private string firstname;
+	private string lastname;
+	private int age;
+	private long IDnumber;
+	private int gender;
+	private double first grade;
+	private double second grade;
+	private double third grade;
+	private double x;
+	private double Average;
+	
+	public student(String a, String b, int c, long d, int e, double f, double g, double h )
+	{
+		first name = a;
+		last name = b;
+		age = c;
+		IDnumber = d;
+		gender = e
+		first grade = f;
+		second grade = g;
+		third grade = h;		
+	}
+	
+	public string getfirstname()
+	{
+		return first name;
+	}	
+	public string getlastname()
+	{
+		return lastname;
+	}
+	public int getage()
+	{
+		return age;
+	}
+	public long getIDnumber()
+	{
+		return IDnumber;
+	}
+	public int getgender()
+
+	    {
+
+	     return gender;
+
+	    }
+  
+ public double getfirstGrade()
+	    {
+	     return firstGrade;
+	    }
+
+
+public double getsecondGrade()
+{
+	return secondGrade; 
+}
+	     
+public double getthirdGrade()
+{
+return thirdGrade;
+}
+public void setfirstGrade(double x)
+{
+	firstGrade = x;
+}
+
+public void setsecondGrade(double x)
+{
+secondGrade = x;
+}
+
+ public void setthirdGrade(double x)
+ {
+thirdGrade = x;
+
+}
+ 
+
+public double calculateAverage()
+
+	    {
+
+	     Average = firstGrade + secondGrade + thirdGrade;
+
+	     return Average;
+
+	    }
+
+	
+ public String toString()
+
+	    {
+
+return "First Student: [First Name: " + firstName + "] [Last Name: " + lastName + "] [Age: " + age + "] [ID: " + IDNumber + "] [Gender: " + gender + "] [Grades : " + firstGrade + ", " +secondGrade + " and " + thirdGrade + "] [Average: " + Average + "]";
+
+	    }
+
+	     
+
+public static void main(String args[])
+
+	{
+
+	     Student first = new Student("Fouad", "Mouawad", 20, 200904935, 0, 89, 92, 92);
+
+	     System.out.println("\n" + first);
+
+	      
+
+	     Student second = new Student("Maha", "Diab", 10, 200904965, 1, 89, 92, 92);
+
+	     System.out.println("\n" + second);
+	
+	
+	     Student third = new Student("Amer", "Mouawad", 10, 200904975, 0, 89, 92, 92);
+
+	     System.out.println("\n" + third);
+	 double Overalaverage = ( first.getfirstGrade() + second.getfirstGrade() + third.getfirstGrade() + first.getsecondGrade() + second.getsecondGrade() + third.getsecondGrade() + first.getthirdGrade() + second.getthirdGrade() + third.getthirdGrade() ) / 9;
+
+	     System.out.println("\nOverall Average: " + Overalaverage);
+	  double AverageAge = ( first.getage() + second.getage() + third.getage() ) / 3;
+
+	     System.out.println("Average age: " + AverageAge);
+	
+	     int Gender = first.getgender() + second.getgender() + third.getgender();
+
+	     System.out.println("\nThere are " + Gender + " female(s) in the classe.");
+	
+	     int male = 3-Gender;
+
+	     System.out.println("there are " + male + " male(s) in the classe.");
+	    }
+	
+	}
