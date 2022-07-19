@@ -9,60 +9,66 @@ public class student
 	private double first grade;
 	private double second grade;
 	private double third grade;
+	private double fourth grade:
+	private double fifth grade:
 	private double x;
 	private double Average;
 	
-	public student(String a, String b, int c, long d, int e, double f, double g, double h )
-	{
+public student(String a, String b, int c, long d, int e, double f, double g, double h, double i, double j )
+{
 		first name = a;
 		last name = b;
 		age = c;
 		IDnumber = d;
 		gender = e
-		first grade = f;
-		second grade = g;
-		third grade = h;		
-	}
+		firstgrade = f;
+		secondgrade = g;
+		thirdgrade = h;
+		fourthgrade = i;
+		fifthgrade = j;
+}
 	
-	public string getfirstname()
-	{
-		return first name;
-	}	
-	public string getlastname()
-	{
-		return lastname;
-	}
-	public int getage()
-	{
-		return age;
-	}
-	public long getIDnumber()
-	{
-		return IDnumber;
-	}
-	public int getgender()
-
-	    {
-
-	     return gender;
-
-	    }
-  
+public string getfirstname()
+{	
+return first name;
+}	
+public string getlastname()
+{
+return lastname;
+}
+public int getage()
+{
+return age;
+}
+public long getIDnumber()
+{
+return IDnumber;
+}
+public int getgender()
+{
+return gender;
+}
  public double getfirstGrade()
-	    {
-	     return firstGrade;
-	    }
-
-
+{
+return firstGrade;
+}
 public double getsecondGrade()
 {
-	return secondGrade; 
-}
-	     
+return secondGrade; 
+}	     
 public double getthirdGrade()
 {
 return thirdGrade;
 }
+public double getfourthGrade()
+{
+return fourthGrade;
+}
+public double getfifthdGrade()
+{
+return fifthGrade;
+}
+
 public void setfirstGrade(double x)
 {
 	firstGrade = x;
@@ -78,24 +84,33 @@ secondGrade = x;
 thirdGrade = x;
 
 }
+ public void setthirdGrade(double x)
+ {
+fourthGrade = x;
+
+}
+ public void setthirdGrade(double x)
+ {
+fifthGrade = x;
+
+}
  
 
 public double calculateAverage()
 
-	    {
+{
 
-	     Average = firstGrade + secondGrade + thirdGrade;
+Average = firstGrade + secondGrade + thirdGrade + fourth grade + fifth grade;
 
-	     return Average;
+	  return Average;
 
-	    }
+}
 
 	
- public String toString()
+public String toString()
 
 	    {
-
-return "First Student: [First Name: " + firstName + "] [Last Name: " + lastName + "] [Age: " + age + "] [ID: " + IDNumber + "] [Gender: " + gender + "] [Grades : " + firstGrade + ", " +secondGrade + " and " + thirdGrade + "] [Average: " + Average + "]";
+return "First Student: [First Name: " + firstName + "] [Last Name: " + lastName + "] [Age: " + age + "] [ID: " + IDNumber + "] [Gender: " + gender + "] [Grades : " + firstGrade + ", " +secondGrade + "," +thirdgrade"," +fourthgrade" and " + fifthGrade + "] [Average: " + Average + "]";
 
 	    }
 
@@ -126,7 +141,7 @@ public static void main(String args[])
 
 	     System.out.println("Average age: " + AverageAge);
 	
-	     int Gender = first.getgender() + second.getgender() + third.getgender();
+	     int Gender = first.getgender() + second.getgender() + third.getgender() + fourth.grade() + fifth.grade();
 
 	     System.out.println("\nThere are " + Gender + " female(s) in the classe.");
 	
